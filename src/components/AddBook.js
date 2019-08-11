@@ -1,4 +1,4 @@
-import React, { useState, useContext, PureComponent } from 'react';
+import React, { useState, useContext } from 'react';
 import { BookContext } from '../context/BookContext';
 
 function AddBook() {
@@ -30,7 +30,7 @@ function AddBook() {
         <input type="text" name="price" value={price} onChange={updatePrice} />
       </div>
       <div>
-        <button>提交</button>
+        <button>提交测试</button>
       </div>
     </form>
   );

@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, PureComponent, useState } from "react";
-import { BookContext } from "../context/BookContext";
+import React, { useContext, PureComponent } from 'react';
+import { BookContext } from '../context/BookContext';
 
 function Nav() {
   const { books } = useContext(BookContext);
@@ -11,7 +11,7 @@ class NavDetail extends PureComponent {
   render() {
     return (
       <nav>
-        <h3>{this.props.name}</h3>
+        <h3 className="222">{this.props.name}</h3>
         <p>书本列表: {this.props.num}</p>
       </nav>
     );

@@ -10,7 +10,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: 'eslint-loader',
+        use: ['babel-loader', 'eslint-loader'],
         exclude: /node_modules/
       }
     ]
@@ -18,6 +18,6 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     port: '8080',
-    open: true
+    open: false
   }
 };
