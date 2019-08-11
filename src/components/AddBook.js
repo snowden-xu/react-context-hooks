@@ -1,11 +1,10 @@
-import React, { useState, useContext, PureComponent } from "react";
-import { BookContext } from "../context/BookContext";
-
+import React, { useState, useContext, PureComponent } from 'react';
+import { BookContext } from '../context/BookContext';
 
 function AddBook() {
-  const {books, setBooks} = useContext(BookContext);
-  const [name, setName] = useState("");
-  const [price, setPrice] = useState("");
+  const { books, setBooks } = useContext(BookContext);
+  const [name, setName] = useState('');
+  const [price, setPrice] = useState('');
 
   const updateName = e => {
     setName(e.target.value);
@@ -18,7 +17,7 @@ function AddBook() {
   const addBook = e => {
     e.preventDefault();
     setBooks(prevBooks => {
-        return [...prevBooks, { name: name, price: price, id: books.length + 1 }]
+      return [...prevBooks, { name: name, price: price, id: books.length + 1 }];
     });
   };
 
