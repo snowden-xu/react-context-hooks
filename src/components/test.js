@@ -1,5 +1,5 @@
 const a = {
-  a: 1111
+  a: 4444
 };
 
 console.log('a', a);
